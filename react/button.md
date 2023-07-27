@@ -10,7 +10,12 @@ dateModified: 2023-07-23
 <!-- describe component -->
 
 Button component
-- 
+A reusable button component with tailwindcss styling.
+Props:
+- buttonType: "button" | "submit" | "reset"
+- name: string
+- disabled?: boolean
+
 
 
 ```tsx
@@ -34,6 +39,6 @@ export default Button;
 
 ```jsx
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ComponentName />
+  <Button buttonType="submit" name="submit" disabled={false}>Submit</Button>
 );
 ```
